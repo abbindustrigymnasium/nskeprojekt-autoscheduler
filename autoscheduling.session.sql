@@ -1,0 +1,46 @@
+-- CREATE TABLE Information (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     status VARCHAR(50),
+--     preference VARCHAR(9),
+--     duration INT,
+--     event_name VARCHAR(255) NOT NULL,
+--     event_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+-- CREATE TABLE YourTableName (
+--     time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     id INT PRIMARY KEY,
+--     taskname VARCHAR(255) NOT NULL,
+--     status VARCHAR(50),
+--     preference INT
+-- );
+-- INSERT INTO Information (status, preference, duration, event_name)
+-- VALUES (
+--         "dynamic",
+--         "em",
+--         90,
+--         'test'
+--     );
+-- ALTER TABLE Information
+-- MODIFY COLUMN preference VARCHAR(9);
+-- DELETE FROM Information;
+-- ALTER TABLE information DROP COLUMN status,
+--     Drop COLUMN time,
+--     ADD COLUMN event_name VARCHAR(255) NOT NULL,
+--     ADD COLUMN status VARCHAR(50) DEFAULT "dynamic",
+--     ADD COLUMN event_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+-- SELECT *
+-- FROM `autoscheduler`.`information`;
+-- DELETE FROM Information;
+-- SELECT *
+-- FROM `autoscheduler`.`information`
+SELECT *
+FROM Information;
+-- DROP TABLE Information;
+-- test -- First, drop the existing primary key constraint if it exists
+-- ALTER TABLE Info DROP PRIMARY KEY;
+-- -- Then, modify the column to be auto-increment
+-- ALTER TABLE Info
+-- MODIFY COLUMN id INT AUTO_INCREMENT;
+-- -- Finally, add the primary key constraint back
+-- ALTER TABLE Info
+-- ADD PRIMARY KEY (id);

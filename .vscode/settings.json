@@ -1,0 +1,21 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "autoscheduling",
+      "database": "autoscheduler",
+      "username": "mysqlUser"
+    }
+  ],
+  "code-runner.executorMap": {
+    "javascript": "node"
+  }, "code-runner.runInTerminal": true,
+  
+}
